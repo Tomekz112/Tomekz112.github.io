@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script defer src="script.js"></script>
 <style>
 body {
   margin: 0;
@@ -44,9 +45,17 @@ body {
 
 <div style="padding-left:16px">
   <h2>Pan Roman</h2>
-  <p>Ogólnie Pan Roman to taki sławny jutuber</p>
-  <p>i tu jest link do jego twórczości:</p>
-  <a href="https://www.youtube.com/channel/UCsIFGUOpW_eldWqdFOuCDnw">Fortepanium Romanum</a>
+  <div style="color: black; border: 5px outset blue; background-color: rgb(57, 57, 255);" id = "error">Wprowadź hasło</div>
+  <br><br>
+  <form id = "form" method="POST">
+    <label for="password">hasło</label><br>
+    <input type="password" id="password" name="password"><br>
+    <button type = "sumbit">Zatwierdź</button>
+  </form>
+  <br><br>
+  <div id = "secret msg"></div>
+  <div></div>
+  <a id = "link" href="error.html">Pan Roman</a>
   <p>i to w sumie tyle</p>
 </div>
 
